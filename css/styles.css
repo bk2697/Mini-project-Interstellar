@@ -1,0 +1,19 @@
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h6 {
+  color: #ccc;
+  text-align: center;
+  font-size: 10px;
+}
