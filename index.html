@@ -6,10 +6,28 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+
     <!-- Google font CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans+Condensed:300" rel="stylesheet">
+
+
+    <!-- MOUNT POINT -->
+    <tagName></tagName>
+
+    <!-- TAGS -->
+    <script src="./tags/tagName.tag" type="riot/tag"></script>
+
+    <!-- LOAD JQuery, Bootstrap, Riot, Firebase -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.10.3/riot+compiler.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+    // INITIALIZE RIOT
+      riot.mount('*');
+    </script>
 
   </head>
   <body>
@@ -35,33 +53,6 @@
 
     <!-- Page 6 -->
     <h1>To be continued...</h1>
-
-    <!-- MOUNT POINT -->
-    <tagName></tagName>
-
-    <!-- TAGS -->
-    <script src="./tags/tagName.tag" type="riot/tag"></script>
-
-    <!-- LOAD JQuery, Bootstrap, Riot, Firebase -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.10.3/riot+compiler.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-    <script>
-      // INITIALIZE FIREBASE
-      var config = {
-        apiKey: "YOUR-API-KEY",
-        authDomain: "YOUR-PROJECT-ID.firebaseapp.com",
-        databaseURL: "https://YOUR-PROJECT-ID.firebaseio.com",
-        projectId: "YOUR-PROJECT-ID",
-        storageBucket: "YOUR-PROJECT-ID.appspot.com",
-        messagingSenderId: "YOUR-MESSAGINGSENDER-ID"
-      };
-      firebase.initializeApp(config);
-
-      // INITIALIZE RIOT
-      riot.mount('*');
-    </script>
 
   </body>
 </html>
