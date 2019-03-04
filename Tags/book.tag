@@ -39,7 +39,7 @@
           <h2>{ bookArray[3].text }</h2>
           <img class="img-responsive" src={bookArray[3].img} usemap="#image-map" alt="bookPage2">
           <map name="image-map">
-            <area target="" alt="bookActivity" title="bookActivity" href="#" coords="550,290,700,400" shape="rect">
+            <area target="" alt="bookActivity" title="bookActivity" href="#" coords="650,320,1000,600" shape="rect">
           </map>
         </div>
         <div if={ page === 4 }>
