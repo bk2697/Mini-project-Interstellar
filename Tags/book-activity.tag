@@ -51,7 +51,7 @@
       </div>
     </div>
 
- 
+
 
 
   </div>
@@ -60,7 +60,8 @@
     // JAVASCRIPT
     let tag = this;
 
-     add lisciner/    this.imgList = [
+     // add listener
+     this.imgList = [
         { img: "Assets/images/book1.png", title: 'book1', need: true},
         { img: "Assets/images/book2.png", title: 'book2', need: false},
         { img: "Assets/images/book3.png", title: 'book3', need: true},
