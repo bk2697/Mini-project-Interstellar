@@ -57,11 +57,14 @@
       {text: "She fixed the robot dishwashers and zoombrooms in her care, but late each night, she snuck away to study her ship repair.",
       img: "Assets/images/bookPage2.png"},
       // activity will use this data for book-activity.tag
-      {text: "Help { name }ella pick out the books which will hep her learn more about ship repair.",
+      {text: "Help { name }ella pick out the books which will help her learn more about ship repair.",
       img: ""},
       {text: "To be continued...",
       img: "Assets/images/endPage.png"}
     ];
+
+    console.log(this.name);
+
     // functions for arrows -> change of pages
     this.increasePage = function(){
       (this.page >= 5) ? this.page = 5: this.page++
