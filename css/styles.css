@@ -5,6 +5,11 @@ h1 {
   font-family: 'Mountains of Christmas', cursive;
 }
 
+input {
+  font-size: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 h2 {
   color: black;
   text-align: center;
