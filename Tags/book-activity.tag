@@ -1,18 +1,58 @@
 <book-activity>
   <!-- HTML -->
-  <div class="container">
-    <h1>Help { this.opts.name }ella pick out the books which will help her learn more about ship repair.</h1>
-  </div>
-  <div class="container">
-    <img src="Assets/images/book1.png" alt="book1">
-    <img src="Assets/images/book2.png" alt="book2">
-    <img src="Assets/images/book3.png" alt="book3">
-  </div>
-  <div class="container">
-    <img src="Assets/images/book4.png" alt="book4">
-    <img src="Assets/images/book5.png" alt="book5">
 
-  </div>
+  <!-- <div class={ correct:true, special:false, difficult:true }></div> -->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="default-book">
+              <img each={} class="card-img-top img-activity" src="Assets/images/book1.png" alt="Book1">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="default-book">
+              <img class="card-img-top img-activity" src="Assets/images/book2.png" alt="Book2">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="default-book">
+              <img class="card-img-top img-activity" src="Assets/images/book3.png" alt="Book3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="default-book">
+              <img class="card-img-top img-activity" src="Assets/images/book4.png" alt="Book4">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="default-book">
+              <img class="card-img-top img-activity" src="Assets/images/book5.png" alt="Book5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <img each={item in imgList} alt="">
+      </div>
+    </div>
+
+ 
+
 
   </div>
 
@@ -20,9 +60,19 @@
     // JAVASCRIPT
     let tag = this;
 
+     add lisciner/    this.imgList = [
+        { img: "Assets/images/book1.png", title: 'book1', need: true},
+        { img: "Assets/images/book2.png", title: 'book2', need: false},
+        { img: "Assets/images/book3.png", title: 'book3', need: true},
+        { img: "Assets/images/book4.png", title: 'book4', need: false},
+        { img: "Assets/images/book5.png", title: 'book5', need: true}
+    ];
+
+
     this.opts = {
       name = "";
     };
+
 
 
 
