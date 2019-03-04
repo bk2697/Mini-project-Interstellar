@@ -37,13 +37,15 @@
         </div>
         <div if={ page === 3 }>
           <h2>{ bookArray[3].text }</h2>
+          <p class="arrow" style='font-size:100px;'>&#10136;</p>
           <img class="img-responsive" src={bookArray[3].img} usemap="#image-map" alt="bookPage2">
+
           <map name="image-map">
             <area target="" alt="bookActivity" title="bookActivity" href="#" coords="650,320,1000,600" shape="rect">
           </map>
         </div>
         <div if={ page === 4 }>
-          <book-activity> </book-activity>
+          <book-activity user = { name }> </book-activity>
           <!-- add trigger to send text to book-activity tag -->
           <!-- <h2>{ bookArray[4].text }</h2> -->
         </div>
