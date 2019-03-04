@@ -5,7 +5,8 @@
 
       <div class="col-sm-1">
         <!-- need to set up col -->
-        <button onclick={ decreasePage }></button>
+
+        <button onclick={ decreasePage } style='font-size:24px'><i class='fas fa-angle-double-left'></i></button>
       </div>
       <div class="col-sm-10">
         <div if={ page === 0 }>
@@ -47,7 +48,8 @@
         </div>
       </div>
       <div class="col-sm-1">
-        <button onclick={ increasePage }></button>
+      
+        <button onclick={ increasePage } style='font-size:24px'><i class='fas fa-angle-double-right'></i></button>
       </div>
       </div>
     </div>
