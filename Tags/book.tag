@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col">
         <!-- need to set up col -->
-        <button onclick={ decreasePage }><</button>
+        <button class="btn btn-primary" onclick={ decreasePage }><</button>
         <div if={ page === 0 }>
           <h2>{ bookArray[0].text }</h2>
         </div>
@@ -30,7 +30,7 @@
           <h1 class="centered">{ bookArray[5].text }</h1>
           <img class="img-responsive" src={bookArray[5].img} alt="endPage">
         </div>
-        <button onclick={ increasePage }>></button>
+        <button class="btn btn-primary" onclick={ increasePage }>></button>
       </div>
     </div>
   </div>
