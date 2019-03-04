@@ -5,6 +5,11 @@ h1 {
   font-family: 'Mountains of Christmas', cursive;
 }
 
+input {
+  font-size: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 h2 {
   color: black;
   text-align: center;
@@ -17,12 +22,14 @@ h6 {
   text-align: center;
   font-size: 10px;
 }
+
 .centered {
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .container{
   position: relative !important;
 }
