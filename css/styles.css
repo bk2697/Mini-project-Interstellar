@@ -52,11 +52,11 @@ h6 {
 
 
 /*arrow animation  */
+
+
 .arrow {
   -webkit-animation: animation 5000ms linear both;
   animation: animation 5000ms linear both infinite;
-  margin-left: 550px;
-  margin-bottom:200;
 }
 
 /* Generated with Bounce.js. Edit at https://goo.gl/iBYBBy */
@@ -121,5 +121,4 @@ h6 {
   90.09% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.99, 9.99, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 9.99, 9.99, 0, 1); }
   96.6% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.006, 10.006, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10.006, 10.006, 0, 1); }
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10, 10, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 10, 10, 0, 1); }
-
 }
