@@ -2,9 +2,10 @@
   <!-- HTML -->
   <div class="container">
     <div class="row">
+
       <div class="col">
         <!-- need to set up col -->
-        <button class="btn btn-primary" onclick={ decreasePage }><</button>
+        <button onclick={ decreasePage }></button>
         <div if={ page === 0 }>
           <h2>{ bookArray[0].text }</h2>
         </div>
@@ -30,11 +31,15 @@
           <h1 class="centered">{ bookArray[5].text }</h1>
           <img class="img-responsive" src={bookArray[5].img} alt="endPage">
         </div>
-        <button class="btn btn-primary" onclick={ increasePage }>></button>
+        <button onclick={ increasePage }></button>
       </div>
     </div>
+
   </div>
+
+
   <script>
+
     // JAVASCRIPT
     let tag = this;
     //girl name array
@@ -66,14 +71,15 @@
     }
 
     // add trigger to send text to book-activity tag
+
   </script>
 
   <style>
-    /* CSS */
-    :scope {}
-    .special {
-      background-color: #333333;
-      color: #FFFFFF;
-    }
+  /* CSS */
+  :scope {}
+  .special {
+    background-color: #333333;
+    color: #FFFFFF;
+  }
   </style>
 </book>
