@@ -3,9 +3,11 @@
   <div class="container">
     <div class="row">
 
-      <div class="col">
+      <div class="col-sm-1">
         <!-- need to set up col -->
         <button onclick={ decreasePage }></button>
+      </div>
+      <div class="col-sm-10">
         <div if={ page === 0 }>
           <h2>{ bookArray[0].text }</h2>
         </div>
@@ -31,6 +33,8 @@
           <h1 class="centered">{ bookArray[5].text }</h1>
           <img class="img-responsive" src={bookArray[5].img} alt="endPage">
         </div>
+      </div>
+      <div class="col-sm-1">
         <button onclick={ increasePage }></button>
       </div>
     </div>

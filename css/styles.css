@@ -26,3 +26,17 @@ h6 {
 .container{
   position: relative !important;
 }
+.img-activity{
+  height: 300px !important;
+  width: 300px !important;
+}
+.card{
+  height: 300px !important;
+  width: 300px !important;
+}
+.correct{
+  background-color: green;
+}
+.default-book{
+  background-color: gray;
+}
