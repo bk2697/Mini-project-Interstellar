@@ -8,7 +8,14 @@
       <div class="col-sm-4" each={ item, i in imgList }>
         <div class="card">
           <div class="default-book">
-            <img class="card-img-top img-activity" src={ item.img } alt={ item.title }>
+           <button id="bookButton" class={correct: need incorrect: !need } type="button" onclick = { alert }>
+
+            <img class="card-img-top img-activity" src={ item.img } alt={ item.title } >
+           </button>
+
+
+
+
           </div>
         </div>
       </div>
@@ -29,10 +36,19 @@
         { img: "Assets/images/book5.png", title: 'book5', need: true}
     ];
 
-    //
-    // this.opts = {
-    //   name = "";
-    // };
+    // alert
+
+    this.alert = function(){
+debugger;
+      if ( this.imgList.need){
+        alert("Good job!!! Pick another one to continue your study.");
+      } else {
+        alert("Try another one.");
+        this.bookButton.style.background = green ;
+      }
+    }
+
+
 
 
 
