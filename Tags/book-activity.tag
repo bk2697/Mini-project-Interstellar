@@ -20,6 +20,7 @@
     let tag = this;
      //add lisciner
 
+     // add listener
      this.imgList = [
         { img: "Assets/images/book1.png", title: 'book1', need: true},
         { img: "Assets/images/book2.png", title: 'book2', need: false},
