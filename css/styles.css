@@ -41,6 +41,7 @@ h6 {
 .card{
   height: 300px !important;
   width: 300px !important;
+  padding-bottom: 350px;
 }
 .correct{
   background-color: green;
