@@ -4,7 +4,7 @@
     <div class="row">
 
       <div class="col-sm-1">
-        <button onclick={ decreasePage } style='font-size:24px'><i class='fas fa-angle-double-left'></i></button>
+        <button onclick={ decreasePage} style='font-size:24px'><i class='fas fa-angle-double-left'></i></button>
       </div>
       <div class="col-sm-10">
         <div if={ page === 0 }>
@@ -36,17 +36,16 @@
         </div>
         <div if={ page === 3 }>
           <h2>{ bookArray[3].text }</h2>
-          <p class="arrow" style='font-size:100px;'>&#10136;</p>
+          <p class="arrow arrowMove" style='font-size:100px;'>&#10136;</p>
           <img class="img-responsive" src={bookArray[3].img} usemap="#image-map" alt="bookPage2">
-
           <map name="image-map">
             <area target="" alt="bookActivity" title="bookActivity" href="#" coords="650,320,1000,600" shape="rect">
           </map>
         </div>
         <div if={ page === 4 }>
-          <book-activity user = { name }> </book-activity>
-          <!-- add trigger to send text to book-activity tag -->
-          <!-- <h2>{ bookArray[4].text }</h2> -->
+          <div class="">
+            <book-activity user = { name }> </book-activity>
+          </div>
         </div>
         <div if={ page === 5 }>
           <h1 class="centered">{ bookArray[5].text }</h1>
@@ -54,7 +53,7 @@
         </div>
       </div>
       <div class="col-sm-1">
-        <button onclick={ increasePage } style='font-size:24px'><i class='fas fa-angle-double-right'></i></button>
+        <button onclick={ stopPage } style='font-size:24px'><i class='fas fa-angle-double-right'></i></button>
       </div>
       </div>
     </div>
@@ -86,11 +85,15 @@
     ];
     // functions for arrows -> change of pages
     this.increasePage = function(){
-      (this.page >= 5) ? this.page = 5: this.page++
+      (this.page >= 5) ? this.page = 5 : this.page++;
     }
     this.decreasePage = function(){
-      (this.page <= 0) ? this.page = 0: this.page--
+      (this.page <= 0) ? this.page = 0: this.page--;
     }
+    this.stopPage = function(){
+      (this.name === "") ? this.page = 0 : this.increasePage();
+    }
+
     //update name
     this.changeName = function(e){
       this.increasePage();
