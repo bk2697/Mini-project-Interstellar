@@ -17,21 +17,21 @@
           <div class="col-sm-6">
             <h2>{ bookArray[0].text }</h2>
             <br>
-            <input type="text" ref="girlName" class="form-control" placeholder="First Name"  >
+            <input type="text" ref="girlName" class="form-control" placeholder="First Name" onchange={ changeName }>
             <br>
-             <!-- <a class="btn btn-primary" style="float: right;" onclick={ !changeName }>Submit</a> -->
-             <a class="btn btn-primary" style="float: right;" onclick={ changeName }>Submit</a>
+             <a class="btn btn-primary" style="float: right;" onclick={ !changeName }>Submit</a>
+             <!-- <a class="btn btn-primary" style="float: right;" onclick={changeName }>Submit</a> -->
              </div>
         </div>
         <div if={ page === 1 }>
-          <h1 class="centered">{ bookArray[1].text }</h1>
-          <!-- <h1 class="centered">Interstellar { this.name }ella</h1> -->
+          <!-- <h1 class="centered">{ bookArray[1].text }</h1> -->
+          <h1 class="centered">Interstellar { this.name }ella</h1>
           <!-- need to but height limit -->
           <img class="img-responsive" src={bookArray[1].img} alt="titlePage">
         </div>
         <div if={ page === 2 }>
-          <!-- <h2>Once upon a planetoid, amid her tools and sprockets, a girl named { this.name }ella dreamed of fixing fancy rockets.</h2> -->
-          <h2>{ bookArray[2].text }</h2>
+          <h2>Once upon a planetoid, amid her tools and sprockets, a girl named { this.name }ella dreamed of fixing fancy rockets.</h2>
+          <!-- <h2>{ bookArray[2].text }</h2> -->
           <img class="img-responsive" src={bookArray[2].img} alt="bookPage1">
         </div>
         <div if={ page === 3 }>
