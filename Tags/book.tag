@@ -58,12 +58,9 @@
       </div>
       </div>
     </div>
-
   </div>
 
-
   <script>
-
     // JAVASCRIPT
     let tag = this;
     //girl name array
@@ -75,19 +72,18 @@
     this.bookArray = [
       {text: "Hello! Before we begin reading this book, could you please tell me your name?",
       img: "Assets/images/interstellarcinderella_cover1.jpg"},
-      {text: {name},
+      {text: "Interstellar" + { name }+ "ella",
       img: "Assets/images/titlePage-empty.png"},
       {text: "Once upon a planetoid, amid her tools and sprockets, a girl named"+{ name }+"ella dreamed of fixing fancy rockets.",
       img: "Assets/images/bookPage1.png"},
       {text: "She fixed the robot dishwashers and zoombrooms in her care, but late each night, she snuck away to study her ship repair.",
       img: "Assets/images/bookPage2.png"},
       // activity will use this data for book-activity.tag
-      {text: "Help { name }ella pick out the books which will help her learn more about ship repair.",
+      {text: "Help" + { name } + "ella pick out the books which will help her learn more about ship repair.",
       img: ""},
       {text: "To be continued...",
       img: "Assets/images/endPage.png"}
     ];
-
     // functions for arrows -> change of pages
     this.increasePage = function(){
       (this.page >= 5) ? this.page = 5: this.page++
@@ -95,15 +91,12 @@
     this.decreasePage = function(){
       (this.page <= 0) ? this.page = 0: this.page--
     }
-
+    //update name
     this.changeName = function(e){
       this.increasePage();
       this.name = this.refs.girlName.value;
     }
-
-
     // add trigger to send text to book-activity tag
-
   </script>
 
   <style>
