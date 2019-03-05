@@ -17,10 +17,10 @@
           <div class="col-sm-6">
             <h2>{ bookArray[0].text }</h2>
             <br>
-            <input type="text" ref="girlName" class="form-control" placeholder="First Name" onchange={ changeName } >
+            <input type="text" ref="girlName" class="form-control" placeholder="First Name"  >
             <br>
              <!-- <a class="btn btn-primary" style="float: right;" onclick={ !changeName }>Submit</a> -->
-             <a class="btn btn-primary" style="float: right;" onclick={ !changeName }>Submit</a>
+             <a class="btn btn-primary" style="float: right;" onclick={ changeName }>Submit</a>
              </div>
         </div>
         <div if={ page === 1 }>
