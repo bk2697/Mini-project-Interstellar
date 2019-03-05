@@ -30,6 +30,14 @@ h6 {
   transform: translate(-50%, -50%);
 }
 
+.arrowMove {
+  position: absolute;
+  top: 67%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  color: #B9D3EE;
+}
+
 .container{
   position: relative !important;
 }
