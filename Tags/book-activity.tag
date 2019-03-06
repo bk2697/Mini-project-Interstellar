@@ -5,10 +5,10 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-4" each={ imgList }>
+      <div class="col-sm-4" each={ item, i in imgList }>
         <div class="card">
           <div class="default-book">
-            <img class="card-img-top img-activity" src={ img } alt={ title }>
+            <img class="card-img-top img-activity" src={ item.img } alt={ item.title }>
           </div>
         </div>
       </div>
