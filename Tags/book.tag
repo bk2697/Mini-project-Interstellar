@@ -20,7 +20,7 @@
             <input type="text" ref="girlName" class="form-control" placeholder="First Name" onchange={ changeName }>
             <br>
              <a class="btn btn-primary" style="float: right;" onclick={ !changeName }>Submit</a>
-             
+
              </div>
         </div>
         <div if={ page === 1 }>
@@ -102,12 +102,5 @@
     // add trigger to send text to book-activity tag
   </script>
 
-  <style>
-  /* CSS */
-  :scope {}
-  .special {
-    background-color: #333333;
-    color: #FFFFFF;
-  }
-  </style>
+
 </book>
