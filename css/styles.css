@@ -51,14 +51,24 @@ h6 {
   width: 300px !important;
   padding-bottom: 350px;
 }
-.correct{
-  background-color: green;
-}
+
 .default-book{
   background-color: ;
+}
 
+.bookButton{
+  background-color: transparent;
+  border:none;
+}
 
-
+.correct{
+  background-color: green;
+  border:none;
+}
+.incorrect{
+  background-color: red;
+  border:none;
+}
 
 /*arrow animation  */
 
@@ -66,6 +76,7 @@ h6 {
 .arrow {
   -webkit-animation: animation 5000ms linear both;
   animation: animation 5000ms linear both infinite;
+
 }
 
 /* Generated with Bounce.js. Edit at https://goo.gl/iBYBBy */
