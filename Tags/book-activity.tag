@@ -5,6 +5,10 @@
 
   <div class="container">
     <div class="row">
+      <h2> Hello { opts.user }ella pick out the books which will help her learn more about ship repair.</h2>
+
+    </div>
+    <div class="row">
       <div class="col-sm-4" each={ item, i in imgList } >
         <div class="card">
           <div class="default-book">
@@ -21,7 +25,7 @@
     // JAVASCRIPT
     let tag = this;
      //add lisciner
-     this.state = {backgroundColor: null};
+
      // add listener
      this.imgList = [
         { img: "Assets/images/book1.png", title: 'book1', need: true},
