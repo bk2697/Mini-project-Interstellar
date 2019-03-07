@@ -5,7 +5,7 @@
 
   <div class="container">
     <div class="row">
-      <h2> Hello { opts.user }ella pick out the books which will help her learn more about ship repair.</h2>
+      <h2> Help { opts.user }ella pick out the books which will help her learn more about ship repair.</h2>
 
     </div>
     <div class="row">
