@@ -9,11 +9,11 @@
 
     </div>
     <div class="row">
-      <div class="col-sm-4" each={ item, i in imgList } >
+      <div class="col-sm-4" each={ item, i in imgList }>
         <div class="card">
           <div class="default-book">
            <button class="bookButton" value={i} type="button" onclick = { alert }>
-             <img class="card-img-top img-activity" src={ item.img } alt={ item.title } >
+             <img class="card-img-top img-activity" src={ item.img } alt={ item.title }>
            </button>
           </div>
         </div>

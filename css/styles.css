@@ -32,8 +32,8 @@ h6 {
 
 .arrowMove {
   position: absolute;
-  top: 67%;
-  left: 68%;
+  top: 55%;
+  left: 65%;
   transform: translate(-50%, -50%);
   color: #B9D3EE;
 }
