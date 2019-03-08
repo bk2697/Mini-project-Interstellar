@@ -70,6 +70,14 @@ h6 {
   border:none;
 }
 
+p {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+
 /*arrow animation  */
 
 
