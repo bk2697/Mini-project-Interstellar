@@ -13,15 +13,15 @@
           <br> <br>
           <div class="col-sm-4">
           <img class="img-responsive" src={bookArray[0].img} alt="bookPage1">
-          </div>
-          <div class="col-sm-6">
-            <h2>{ bookArray[0].text }</h2>
-            <br>
-            <input type="text" ref="girlName" class="form-control" placeholder="First Name" onchange={ changeName }>
-            <br>
-             <a class="btn btn-primary" style="float: right;" onclick={ !changeName }>Submit</a>
+        </div>
+        <div class="col-sm-6">
+          <h2>{ bookArray[0].text }</h2>
+          <br>
+          <input type="text" ref="girlName" class="form-control" placeholder="First Name" onchange={ changeName }>
+          <br>
+          <a class="btn btn-primary" style="float: right;" onclick={ !changeName }>Submit</a>
 
-             </div>
+        </div>
         </div>
         <div if={ page === 1 }>
           <!-- <h1 class="centered">{ bookArray[1].text }</h1> -->
