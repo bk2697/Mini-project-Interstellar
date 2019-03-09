@@ -32,7 +32,6 @@
     let tag = this;
 
 
-
      // add listener
      this.imgList = [
         {
