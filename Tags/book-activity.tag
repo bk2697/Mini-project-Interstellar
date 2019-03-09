@@ -3,11 +3,11 @@
 
   <!-- <div class={ correct:true, special:false, difficult:true }></div> -->
 
+<!-- h2 text -->
+  <h2> Help { opts.user }ella pick out the books which will help her learn more about ship repair.</h2>
+
+<!-- book Activity -->
   <div class="container">
-
-      <h2 class=""> Help { opts.user }ella pick out the books which will help her learn more about ship repair.</h2>
-
-
     <div class="row">
 
       <div class="col-sm-4" each={ item, i in imgList } >
@@ -22,6 +22,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -117,6 +118,6 @@
       background-color:#fcdcd4;
     }
 
-  
+
   </style>
 </book-activity>
