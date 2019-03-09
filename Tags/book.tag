@@ -39,7 +39,7 @@
           <p class="arrow arrowMove" style='font-size:100px;'>&#10136;</p>
           <img class="img-responsive" src={bookArray[3].img} usemap="#image-map" alt="bookPage2">
           <map name="image-map">
-            <area target="" alt="bookActivity" title="bookActivity" href="#" coords="650,320,1000,600" shape="rect">
+            <area target="" alt="bookActivity" title="bookActivity" onclick={ activity } coords="650,320,1000,600" shape="rect">
           </map>
         </div>
         <div if={ page === 4 }>
@@ -62,6 +62,8 @@
   <script>
     // JAVASCRIPT
     let tag = this;
+
+
     //girl name array
     // name = "Brenda";
     this.name = "";
@@ -99,6 +101,15 @@
       this.increasePage();
       this.name = this.refs.girlName.value;
     }
+
+    this.activity = function(e){
+      observable.trigger('activity');
+    }
+    var that = this;
+    observable.on ('activity', function(){
+      that.increasePage();
+      that.update();
+    })
     // add trigger to send text to book-activity tag
   </script>
 
