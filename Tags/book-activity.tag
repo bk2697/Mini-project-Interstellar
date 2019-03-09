@@ -31,7 +31,7 @@
     // JAVASCRIPT
     let tag = this;
 
-    this.rightclick = 0;
+
 
      // add listener
      this.imgList = [
@@ -73,7 +73,7 @@
     ];
 
     // alert
-
+    this.rightclick = 0;
 
     this.alert = function(e){
 
@@ -81,20 +81,22 @@
       if ( this.imgList[e.currentTarget.value].need){
 
         this.imgList[e.currentTarget.value].clicked = true;
-        this.rightclick++;
-        if (this.rightclick == 3){
-          alert("Finish studying!");
-        } else {
-          alert ("Good job!!! Pick another one to continue your study.");
-        }
-
+        this.correctAlert();
 
       } else {
-
         alert("That was a good guess. Try another one.");
         this.imgList[e.currentTarget.value].clicked = true;
       }
     }
+
+    this.correctAlert = function(){
+      this.rightclick++;
+      if (this.rightclick == 3){
+        alert("Finish studying!");
+      } else {
+        alert ("Good job!!! Pick another one to continue your study.");
+      }
+    }.bind(this)
 
     this.colorChange = function(item){
 
