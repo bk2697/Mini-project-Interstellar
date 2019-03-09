@@ -4,10 +4,10 @@
   <!-- <div class={ correct:true, special:false, difficult:true }></div> -->
 
   <div class="container">
-    <div class="row">
-      <h2> Help { opts.user }ella pick out the books which will help her learn more about ship repair.</h2>
 
-    </div>
+      <h2 class=""> Help { opts.user }ella pick out the books which will help her learn more about ship repair.</h2>
+
+
     <div class="row">
 
       <div class="col-sm-4" each={ item, i in imgList } >
@@ -109,6 +109,7 @@
 
   <style>
 
+
     .correct{
       background-color:#dbfff0;
     }
@@ -116,11 +117,6 @@
       background-color:#fcdcd4;
     }
 
-    /* CSS */
-    :scope {}
-    .special {
-      background-color: #333333;
-      color: #FFFFFF;
-    }
+  
   </style>
 </book-activity>
