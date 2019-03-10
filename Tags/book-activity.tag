@@ -13,7 +13,7 @@
       <div class="col-sm-4" each={ item, i in imgList } >
 
         <div class="card { colorChange(item) }">
-          {console.log(this)}
+
           <div class="default-book" >
            <button class="bookButton" value={i} type="button" onclick = { alert }>
              <img class="card-img-top img-activity " src={ item.img } alt={ item.title } >
@@ -91,7 +91,7 @@
     this.correctAlert = function(){
       this.rightclick++;
       if (this.rightclick == 3){
-        alert("Finish studying!");
+        alert("Congratulations! Now we can start the repair!");
       } else {
         alert ("Good job!!! Pick another one to continue your study.");
       }
