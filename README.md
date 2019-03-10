@@ -39,7 +39,12 @@ https://docs.google.com/presentation/d/10FUDHZ3yGveVirnVOioQeupbMxx1ZpkNO5mYUO7A
     ![](https://i.imgur.com/xYJKai1.jpg)
     ![](https://i.imgur.com/TECd6n5.png)
     ![](https://i.imgur.com/Z5PPbWr.jpg)
-   
+
+### Github Reposirtory Link
+
+### Github Demo Page
+https://dl3238.github.io/Mini-project-Interstellar/
+
 ### Reflection Video
 https://youtu.be/aH2wKTv5R2c
     
