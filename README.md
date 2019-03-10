@@ -40,11 +40,11 @@ https://docs.google.com/presentation/d/10FUDHZ3yGveVirnVOioQeupbMxx1ZpkNO5mYUO7A
     ![](https://i.imgur.com/TECd6n5.png)
     ![](https://i.imgur.com/Z5PPbWr.jpg)
 
-### Github Reposirtory Link
+### Repository Github URL
 
-### Github Demo Page
+### Demo Github Pages URL
 https://dl3238.github.io/Mini-project-Interstellar/
 
-### Reflection Video
+### Reflection Youtube URL
 https://youtu.be/aH2wKTv5R2c
     
